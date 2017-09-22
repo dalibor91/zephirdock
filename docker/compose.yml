@@ -1,0 +1,13 @@
+version: '2'
+services:
+  zephirdock:
+    image: zephirdock
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: zephirdock
+    volumes:
+      - ../app:/root/app
+    privileged: true
+
+
